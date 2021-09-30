@@ -1,13 +1,323 @@
-body {
+
+* {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  width: 100vw;
+}
+
+:root {
+  --primary: #007BFE;
+  --secondary: #657E98;
+  --dark: #03203C;
+  --light: #F3F9FF;
+}
+
+/* style={{ backgroundImage: "url(/images/hero-img.svg)"}} */
+
+/* -----------NavBar ---------- */
+
+.navbar-bg {
+  padding-top: 2rem;
+  z-index: 99;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+}
+
+
+/* ----------- Hero Section ---------- */
+.herosection {
+  height: 100vh;
+  margin-bottom: 5rem;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.ring {
+    margin-bottom: -10rem;
+    padding-right: 28rem;
+}
+
+.box-1 {
+  padding-right: 55rem;
+  margin-bottom: -2rem;
+}
+
+.box-2 {
+  padding-right: 12rem;
+  margin-bottom: -4rem;
+}
+
+.hero {
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-position: right;
+  background-size: 50rem;
+  margin-right: -50px;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  margin-top: 5rem;
+}
+
+.hero h1 span{
+  color: var(--primary)
+}
+
+.hero p {
+  color: var(--secondary);
+}
+
+.title {
+  width: 50%;
+}
+
+
+
+/* ----------- Consummers Concerns ---------- */
+.concern {
+  padding: 5rem 3rem;
+  border-radius: 3rem;
+  background-color: var(--light);
+}
+
+.concern h2 {
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+.con-box {
+  border-radius: 1rem;
+  width: 20rem;
+
+}
+
+.con-box img {
+  width: 2rem;
+  margin: 0 1.2rem;
+}
+
+.con-box h6 {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.con-box p {
+  font-size: 0.8rem; 
+  color: var(--secondary);
+}
+
+
+/* ----------- Product Experience ---------- */
+.product-box span{
+  color: var(--primary);
+}
+
+.product-box .p-title {
+  padding: 5rem 12rem;
+}
+
+.product-box .p-title h1 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.product-box .p-title p {
+  color: var(--secondary);
+  padding: 0 5rem;
+  font-size: 1.2rem;
+}
+
+.product-box .p-card {
+  background-color: var(--light);
+  border-radius: 1rem;
+}
+
+.p-card {
+  height: 20rem;
+}
+
+.p-card p {
+  font-size: 0.8rem;
+  color: var(--secondary);
+}
+
+
+/* ----------- How it works ---------- */
+.work {
+  padding: 5rem 0;
+}
+
+.how {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.w-card {
+  width: 26rem;
+}
+
+.w-card h4 {
+  font-weight: 600;
+}
+
+.w-card p {
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+.cards {
+  width: 100%;
+}
+/* ----------- Why Choose Stegofy ---------- */
+.why-box {
+  background-color: var(--light);
+  border-radius: 3rem;
+}
+
+.why-box h1{
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.why-box h1 span{
+  color: var(--primary);
+}
+
+.why-box p {
+  color: var(--secondary);
+  width: 80%;
+}
+
+.why-box button {
+  font-size: 0.84rem;
+}
+
+/* ----------- Footer ---------- */
+footer {
+  color: #fff;
+  background-color: var(--dark);
+  width: 100%;
+  margin-top: 8rem;
+}
+
+footer ul li a {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+footer ul li:first-child a {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+.news-letter input {
+  border: none;
+  font-size: 0.9rem;
+  outline-style: none;
+}
+
+.news-letter input:focus {
+  outline: none;
+}
+
+.news-letter button{
+  font-size: 0.8rem;
+}
+
+.copyright {
+  font-size: 0.8rem;
+
+}
+
+
+
+
+@media (max-width:768px) {
+  
+  nav {
+    padding: 0 1rem;
+  }
+
+  .herosection {
+    height: 90%;
+  }
+
+  .hero {
+    background-size: 0;
+    width: 90%;
+  }
+  .title {
+    width: 100%;
+    font-size: 2rem;
+    padding: 2rem;
+  }
+  .hero h1 {
+    font-size: 2.8rem;
+    margin-top: 2rem;
+    
+  }  
+  .hero p {
+    color: var(--secondary);
+    font-size: 0.8rem;
+  }
+
+  .ring {
+    margin-bottom: -4rem;
+    padding-right: 8rem;
+  }
+
+  .box-1 {
+    padding-right: 22rem;
+    margin-bottom: 1rem;
+  }
+
+  .box-2 {
+    padding-right: 2rem;
+    margin-bottom: -4rem;
+  }
+
+  .concern h2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .product-box .p-title h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .product-box .p-title {
+    padding: 2rem 1rem;
+  }
+  
+  .product-box .p-title p {
+    padding: 3rem 1rem;
+  }
+
+  .why-box .col-lg-4 img {
+    width: 80%;
+  }
+  
+}
+
+@media (max-width:480px) {
+  .ring, .box-1, .box-2{
+    display: none;
+  }
 }
