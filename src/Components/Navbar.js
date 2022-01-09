@@ -31,7 +31,7 @@ const Navbar = () => {
                             <a className="nav-link" href="#">Contact Us</a>
                           </li>
                           <li className="nav-item">
-                          <button className="btn btn-primary rounded-pill px-4 my-2 my-md-0" type="submit">Verify</button>
+                          <button className="btn btn-primary rounded-pill px-4 my-2 my-md-0" type="submit"><i className="fas fa-qrcode me-2"></i>Verify</button>
                           </li>
                           <li class="nav-item">
                           <button className="btn btn-outline-primary rounded-pill px-4 my-2 my-md-0" type="submit">Login</button>
